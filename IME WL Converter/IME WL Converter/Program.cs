@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -18,6 +18,7 @@ namespace Studyzy.IMEWLConverter
         [STAThread]
         private static void Main(string[] args)
         {
+        	/*
             PlatformID platform = Environment.OSVersion.Platform;
             if (platform == PlatformID.Unix || platform == PlatformID.MacOSX)
             {
@@ -25,6 +26,7 @@ namespace Studyzy.IMEWLConverter
                 consoleRun.Run();
                 return;
             }
+            */
 #if DEBUG
 
             //Application.Run(new SelfDefiningConfigForm());
@@ -32,7 +34,11 @@ namespace Studyzy.IMEWLConverter
 #endif
             if (args.Length > 0)
             {
-                AttachConsole(ATTACH_PARENT_PROCESS);
+                PlatformID platform = Environment.OSVersion.Platform;
+                if (platform == PlatformID.Win32NT)
+                {
+                    AttachConsole(ATTACH_PARENT_PROCESS);
+                }
                 var consoleRun = new ConsoleRun(args);
                 consoleRun.Run();
             }

@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="IME WL Converter/IME WL Converter.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="IME WL Converter/Forms/ChineseConverterSelectForm.cs">
+    <Files>
+      <File FileName="IME WL Converter/Forms/ChineseConverterSelectForm.cs" Line="50" Column="44" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
