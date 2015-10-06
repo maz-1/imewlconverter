@@ -318,6 +318,8 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(151, 18);
             this.toolStripStatusLabel1.Text = "欢迎使用深蓝词库转换工具";
+			this.toolStripStatusLabel1.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			
             // 
             // timer1
             // 

@@ -254,7 +254,7 @@ namespace Studyzy.IMEWLConverter
         {
             Console.WriteLine("-i:输入的词库类型 词库路径1 词库路径2 词库路径3 -o:输出的词库类型 输出词库路径 -c:编码文件路径");
             Console.WriteLine("输入和输出的词库类型如下：");
-            ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.Green);
+            //ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.Green);
 
             foreach (ComboBoxShowAttribute comboBoxShowAttribute in cbxImportItems)
             {
@@ -262,20 +262,20 @@ namespace Studyzy.IMEWLConverter
             }
 
             Console.WriteLine("");
-            ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.White);
-            Console.WriteLine("例如要将C:\\test.scel和C:\\a.scel的搜狗细胞词库转换为D:\\gg.txt的谷歌拼音词库，命令为：");
-            ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.Yellow);
-            Console.WriteLine("深蓝词库转换.exe -i:" + ConstantString.SOUGOU_XIBAO_SCEL_C + " C:\\test.scel C:\\a.scel -o:" +
-                              ConstantString.GOOGLE_PINYIN_C + " D:\\gg.txt");
+            //ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.White);
+            Console.WriteLine("例如要将~/c/test.scel和~/c/a.scel的搜狗细胞词库转换为~/d/gg.txt的谷歌拼音词库，命令为：");
+            //ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.Yellow);
+            Console.WriteLine("imewlconverter -i:" + ConstantString.SOUGOU_XIBAO_SCEL_C + " ~/c/test.scel ~/c/a.scel -o:" +
+                              ConstantString.GOOGLE_PINYIN_C + " ~/d/gg.txt");
 
-            ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.White);
-            Console.WriteLine("例如要将C:\\test.scel和C:\\a.scel的搜狗细胞词库转换为D:\\temp文件夹下的谷歌拼音词库test.txt和a.txt，命令为：");
-            ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.Yellow);
-            Console.WriteLine("深蓝词库转换.exe -i:" + ConstantString.SOUGOU_XIBAO_SCEL_C + " C:\\test.scel C:\\a.scel -o:" +
-                              ConstantString.GOOGLE_PINYIN_C + " D:\\temp\\*");
+            //ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.White);
+            Console.WriteLine("例如要将~/c/test.scel和~/c/a.scel的搜狗细胞词库转换为~/d/temp文件夹下的谷歌拼音词库test.txt和a.txt，命令为：");
+            //ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.Yellow);
+            Console.WriteLine("imewlconverter -i:" + ConstantString.SOUGOU_XIBAO_SCEL_C + " ~/c/test.scel ~/c/a.scel -o:" +
+                              ConstantString.GOOGLE_PINYIN_C + " ~/d/temp/*");
 
 
-            ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.White);
+            //ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.White);
             Console.WriteLine("自定义格式的参数如下:");
             Console.WriteLine("-f:213,|byyn");
             Console.WriteLine("213 这里是设置拼音、汉字和词频的顺序，213表示1汉字2拼音3词频，必须要有3个");
@@ -284,9 +284,9 @@ namespace Studyzy.IMEWLConverter
             Console.WriteLine("b 这里是设置拼音分隔符的位置，有lrbn四个选项，l表示左包含，r表示右包含，b表示两边都包含，n表示两边都不包含");
             Console.WriteLine("yyn 这里是设置拼音汉字词频这3个是否显示，y表示显示，b表示不显示，这里yyn表示显示拼音和汉字，不显示词频");
             Console.WriteLine("例如要将一个qpyd词库转换为自定义格式的文本词库，拼音之间逗号分割，拼音和词之间空格分割，不显示词频，同时使用自定义的编码文件code.txt命令如下：");
-            ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.Yellow);
-            Console.WriteLine("深蓝词库转换.exe -i:qpyd D:\\a.qpyd -o:self D:\\zy.txt \"-f:213, nyyn\" -c:D:\\code.txt");
-            ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.White);
+            //ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.Yellow);
+            Console.WriteLine("imewlconverter -i:qpyd ~/d/a.qpyd -o:self ~/d/zy.txt \"-f:213, nyyn\" -c:~/d/code.txt");
+            //ConsoleColour.SetForeGroundColour(ConsoleColour.ForeGroundColour.White);
         }
 
         #region Nested type: CommandType
