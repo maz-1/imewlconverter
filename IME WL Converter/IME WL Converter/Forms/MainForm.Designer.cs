@@ -33,6 +33,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+			System.Drawing.Font customfont = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point); 
             this.btnConvert = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.txbWLPath = new System.Windows.Forms.TextBox();
@@ -154,7 +155,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(549, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
-			this.menuStrip1.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.menuStrip1.Font = customfont;
             // 
             // toolStripMenuItem1
             // 
@@ -176,7 +177,7 @@
             this.toolStripMenuItemFilterConfig.Size = new System.Drawing.Size(194, 22);
             this.toolStripMenuItemFilterConfig.Text = "词条过滤设置";
             this.toolStripMenuItemFilterConfig.Click += new System.EventHandler(this.toolStripMenuItemFilterConfig_Click);
-			this.toolStripMenuItemFilterConfig.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.toolStripMenuItemFilterConfig.Font = customfont;
             // 
             // ToolStripMenuItemRankGenerate
             // 
@@ -184,7 +185,7 @@
             this.ToolStripMenuItemRankGenerate.Size = new System.Drawing.Size(194, 22);
             this.ToolStripMenuItemRankGenerate.Text = "词频生成设置";
             this.ToolStripMenuItemRankGenerate.Click += new System.EventHandler(this.ToolStripMenuItemRankGenerate_Click);
-			this.ToolStripMenuItemRankGenerate.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.ToolStripMenuItemRankGenerate.Font = customfont;
 			// 
             // toolStripSeparator2
             // 
@@ -198,7 +199,7 @@
             this.toolStripMenuItemExportDirectly.Size = new System.Drawing.Size(194, 22);
             this.toolStripMenuItemExportDirectly.Text = "不显示结果，直接导出";
             this.toolStripMenuItemExportDirectly.Click += new System.EventHandler(this.toolStripMenuItemExportDirectly_Click);
-			this.toolStripMenuItemExportDirectly.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.toolStripMenuItemExportDirectly.Font = customfont;
             // 
             // toolStripMenuItemStreamExport
             // 
@@ -208,7 +209,7 @@
             this.toolStripMenuItemStreamExport.Text = "一边读取，一边导出";
             this.toolStripMenuItemStreamExport.ToolTipText = "目前只有文本格式的词库才能支持该功能";
             this.toolStripMenuItemStreamExport.Click += new System.EventHandler(this.toolStripMenuItemStreamExport_Click);
-			this.toolStripMenuItemStreamExport.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.toolStripMenuItemStreamExport.Font = customfont;
             // 
             // toolStripMenuItemMergeToOneFile
             // 
@@ -219,7 +220,7 @@
             this.toolStripMenuItemMergeToOneFile.Size = new System.Drawing.Size(194, 22);
             this.toolStripMenuItemMergeToOneFile.Text = "合并多词库到一个文件";
             this.toolStripMenuItemMergeToOneFile.Click += new System.EventHandler(this.toolStripMenuItemMergeToOneFile_Click);
-			this.toolStripMenuItemMergeToOneFile.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.toolStripMenuItemMergeToOneFile.Font = customfont;
             // 
             // ToolStripMenuItemChineseTransConfig
             // 
@@ -227,7 +228,7 @@
             this.ToolStripMenuItemChineseTransConfig.Size = new System.Drawing.Size(194, 22);
             this.ToolStripMenuItemChineseTransConfig.Text = "简繁体转换设置";
             this.ToolStripMenuItemChineseTransConfig.Click += new System.EventHandler(this.ToolStripMenuItemChineseTransConfig_Click);
-			this.ToolStripMenuItemChineseTransConfig.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.ToolStripMenuItemChineseTransConfig.Font = customfont;
             // 
             // 关于ToolStripMenuItem
             // 
@@ -250,7 +251,7 @@
             this.ToolStripMenuItemDonate.Size = new System.Drawing.Size(152, 22);
             this.ToolStripMenuItemDonate.Text = "捐贈";
             this.ToolStripMenuItemDonate.Click += new System.EventHandler(this.ToolStripMenuItemDonate_Click);
-			this.ToolStripMenuItemDonate.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.ToolStripMenuItemDonate.Font = customfont;
             // 
             // ToolStripMenuItemHelp
             // 
@@ -258,7 +259,7 @@
             this.ToolStripMenuItemHelp.Size = new System.Drawing.Size(152, 22);
             this.ToolStripMenuItemHelp.Text = "帮助";
             this.ToolStripMenuItemHelp.Click += new System.EventHandler(this.ToolStripMenuItemHelp_Click);
-			this.ToolStripMenuItemHelp.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.ToolStripMenuItemHelp.Font = customfont;
             // 
             // ToolStripMenuItemAbout
             // 
@@ -266,7 +267,7 @@
             this.ToolStripMenuItemAbout.Size = new System.Drawing.Size(152, 22);
             this.ToolStripMenuItemAbout.Text = "关于";
             this.ToolStripMenuItemAbout.Click += new System.EventHandler(this.btnAbout_Click);
-			this.ToolStripMenuItemAbout.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.ToolStripMenuItemAbout.Font = customfont;
             // 
             // ToolStripMenuItemAccessWebSite
             // 
@@ -274,7 +275,7 @@
             this.ToolStripMenuItemAccessWebSite.Size = new System.Drawing.Size(152, 22);
             this.ToolStripMenuItemAccessWebSite.Text = "查看最新版本";
             this.ToolStripMenuItemAccessWebSite.Click += new System.EventHandler(this.ToolStripMenuItemAccessWebSite_Click);
-			this.ToolStripMenuItemAccessWebSite.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.ToolStripMenuItemAccessWebSite.Font = customfont;
             // 
             // toolStripSeparator3
             // 
@@ -287,7 +288,7 @@
             this.ToolStripMenuItemSplitFile.Size = new System.Drawing.Size(152, 22);
             this.ToolStripMenuItemSplitFile.Text = "文件分割";
             this.ToolStripMenuItemSplitFile.Click += new System.EventHandler(this.ToolStripMenuItemSplitFile_Click);
-			this.ToolStripMenuItemSplitFile.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.ToolStripMenuItemSplitFile.Font = customfont;
             // 
             // ToolStripMenuItemMergeWL
             // 
@@ -295,7 +296,7 @@
             this.ToolStripMenuItemMergeWL.Size = new System.Drawing.Size(152, 22);
             this.ToolStripMenuItemMergeWL.Text = "词库合并";
             this.ToolStripMenuItemMergeWL.Click += new System.EventHandler(this.ToolStripMenuItemMergeWL_Click);
-			this.ToolStripMenuItemMergeWL.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.ToolStripMenuItemMergeWL.Font = customfont;
             // 
             // statusStrip1
             // 
@@ -318,7 +319,7 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(151, 18);
             this.toolStripStatusLabel1.Text = "欢迎使用深蓝词库转换工具";
-			this.toolStripStatusLabel1.Font = new System.Drawing.Font("WenQuanYi Micro Hei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.toolStripStatusLabel1.Font = customfont;
 			
             // 
             // timer1
